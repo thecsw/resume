@@ -1,0 +1,190 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Sagindyk \textsc{Urazayev}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Almaty, Kazakhstan  | 14 June 2000 \\
+    \textsc{Address:}   & 1515 Engel Road TEM 502 \\
+    \textsc{Phone:}     & +1 (785) 917--8451\\
+    \textsc{email:}     & \href{mailto:sagindyk.urazayev@ku.edu}{sagindyk.urazayev@ku.edu}\\
+    \textsc{Github:} & \href{https://github.com/thecsw}{@thecsw}\\
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}
+
+  \textsc{Current} & Undergraduate Degree in \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, Lawrence\\
+  \\
+  
+  \textsc{May} 2018& International Baccalaureate Diploma Programme at \textbf{Quantum College}, Yerevan\\
+  2 years&Thesis --- ``RSA:\@ Encrypting, Decrypting, Hacking'' | Advisor: Smbat Shahinyan\\
+&\textsc{Final IB Score}: 37/45 \hyperlink{ib_grades}{\hfill| \footnotesize Detailed List of Exams}\\&\\
+
+  \textsc{May} 2016& High school at \textbf{Nazarbayev Intellectual School} with Physics and \\4 years&Mathematics concentration, Astana.\\&
+  Cambridge methodology on critical thinking introduced in all aspects \\&of academic program.\\\\
+
+  \textsc{May} 2012& Elementary and Middle School at \textbf{School Gymnasium No. 22}, Astana.\\4 years&\\
+\\
+  \textsc{May} 2008& Elementary School at \textbf{School at the Embassy of Russian Federation in Bulgaria},\\2 years& Sofia\\\\
+  
+\end{tabular}
+
+
+%Section: Work Experience at the top
+\section{Volunteer Experience}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Spring 2018} &  \textsc{Orientation leader for pre-IB students}, \emph{Quantum College}\\&\footnotesize{Planned several meetings with a group of pre-IB students (10th grade) to help them prepare for IBDP (International Baccalaureate Diploma Programme). Advised them on books and helpful outside sources that can be used during studies. Introduced students to faculty staff and academic honesty rules.} \\\multicolumn{2}{c}{}\\
+  
+  \textsc{Dec 2016--2017} &  \textsc{Volunteer at Christmas Charity Bazaar}, \emph{Diplomatic Corps (CD)}\\&\footnotesize{Helping to collect funds for Armenian Orphan Children Charity Organization by advertising and selling national kazakh souvenirs. Introducing people of different nationalities to Kazakh culture and cuisine.} \\\multicolumn{2}{c}{}\\
+
+\textsc{Nov 2016 --- Apr 2018} &  \textsc{Head of BookCrossing Club}, \emph{Quantum College}\\&\footnotesize{Founded the BookCrossing Club to encourage students read and share interesting books of all genres and themes. Responsible for tracking and maintaining a database (SQLite) of all available books. Initiated student discussions about the book that they have read.} \\\multicolumn{2}{c}{}\\
+
+\textsc{Oct 2016 --- Apr 2018} &  \textsc{Tutor in Photoshop Club}, \emph{Quantum College}\\&\footnotesize{Founded the firsh student supported club --- Photoshop club. Trained enrolled students on how to use Adobe Photoshop and explained basic image manipulation algorithms. Guided on job and freelance opportunities. Designed several advertising and marketing materials for Quantum College (Event flairs, posters, CD covers).} \\\multicolumn{2}{c}{}\\
+  
+\end{tabular}
+
+
+%Section: Scholarships and additional info
+\section{Honors and Awards}
+\begin{tabular}{rl}
+  
+  \textsc{Aug.} 2018 & Honors Scholar at University of Kansas\\\\
+
+  \textsc{Aug.} 2018 & KU International Excellence Award \footnotesize{(Full tuition waiver)}\\\\
+
+  \textsc{July} 2018 & International Baccalaureate (IB) Diploma \footnotesize(Final Score 37/45)\\\\
+
+  \textsc{May} 2017 & Winner of the II and III place in high school Computer Science \\&competition “Surprise me”, Nazarbayev Intellectual School\\\\
+
+  \textsc{Sept.} 2012 & Scholarship from the Ministry of Education and Science of Kazakhstan\\&to study at Nazarbayev Intellectual School \footnotesize(Full tuition and food waiver)\normalsize\\\\
+
+\end{tabular}
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+ \textsc{Kazakh:}&Mothertongue\\
+ \textsc{English:}&Fluent\\
+ \textsc{Russian:}&Fluent\\
+ \textsc{French:}&Basic Knowledge (A2)\\
+\end{tabular}
+
+\section{Computer Skills}
+\begin{tabular}{rl}
+
+  Basic Knowledge:& html, bash, Perl, golang (Go), Java, C++, Microsoft Access\\\\
+  
+  Intermediate Knowledge:& C, Python, git (Version Control System), \textsc{Linux}, \LaTeX, mySQL,\\&Docker (Service Deployment, Containerization), ubuntu,\\&
+  Microsoft Word, Microsoft PowerPoint, Microsoft Excel,\\&PostgreSQL, markdown, Org-Mode, emacs, Adobe Photoshop\\
+  
+\end{tabular}
+
+\section{Interests and Activities}
+Open-Source, Data Science, Science Fiction, System Automation\\
+Travelling, Learning new languages
+
+\section{Professional References}
+
+\textbf{Mohamed El-Hodiri} (Mentor, Honors Advisor)\\
+Professor of Economics, CREEES, Middle-Eastern Studies, and AAAS\\
+University of Kansas, Lawrence, Kansas\\
+\href{mailto:melhodiri@ku.edu}{melhodiri@ku.edu}\\
+
+\textbf{Mr.\ Arsen Darbasyan} (Professor for IB CS courses, project supervisor)\\
+Professor of Computer Science and Head of Computer Science Department\\
+Quantum College, Yerevan, Armenia\\
+\href{mailto:arsentd@yahoo.com}{arsentd@yahoo.com}\\
+
+\textbf{Ms.\ Kristine Tonoyan} (Professor for IB English courses)\\
+English Specialist at International Baccalaureate Organization\\
+Quantum College, Yerevan, Armenia\\
+\href{mailto:chrtonoyan@gmail.com}{chrtonoyan@gmail.com}\\
+
+\textbf{Ms.\ Yerken Shantayev} (High School Computer Science advisor)\\
+Teacher of Computer Science at Nazarbayev Intellectual School \\of Physics and Mathematics in Astana, Kazakhstan\\
+\href{mailto:yshantayev@gmail.com}{yshantayev@gmail.com}\\
+
+%-- Education grades
+\newpage
+\par{\centering\Large \hypertarget{ib_grades}{International Baccalaureate at \textsc{Quantum College}, Yerevan}\par}\large{\centering Grades (Out of 7) \par}\normalsize
+
+\begin{center}
+\begin{tabular}{lcc}
+\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Level*}&\textsc{Grade}\\ \hline
+  English Language and Literature	&HL&	5\\
+  Mathematics	&HL&	6\\
+  Physics	&HL&	5\\
+  Computer Science & SL& 7\\
+  Information Technology in a Global Society (ITGS) & SL& 7\\
+  French ab Initio & SL & 5\\
+  Theory of Knowledge & N/A & C\\
+  Extended Essay (Mathematics) & N/A & A\\
+& &\\\cline{2-3}
+ &\textsc{Total}&\textbf{37/45}
+\end{tabular}\\
+\begin{flushleft}
+\footnotesize{*HL --- High Level, SL --- Standard Level}
+\end{flushleft}
+\end{center}
+%\newpage
+\end{document}
