@@ -1,0 +1,82 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Sagindyk \textsc{Urazayev}
+	}\bigskip\par}
+
+
+\section{Professional References}
+
+\textbf{Mohamed El-Hodiri} (Mentor, Honors Advisor)\\
+Professor of Economics, CREEES, Middle-Eastern Studies, and AAAS\\
+University of Kansas, Lawrence, Kansas\\
+\href{mailto:melhodiri@ku.edu}{melhodiri@ku.edu}\\
+
+\textbf{Mr.\ Arsen Darbasyan} (Professor for IB CS courses, project supervisor)\\
+Professor of Computer Science and Head of Computer Science Department\\
+Quantum College, Yerevan, Armenia\\
+\href{mailto:arsentd@yahoo.com}{arsentd@yahoo.com}\\
+
+\textbf{Ms.\ Kristine Tonoyan} (Professor for IB English courses)\\
+English Specialist at International Baccalaureate Organization\\
+Quantum College, Yerevan, Armenia\\
+\href{mailto:chrtonoyan@gmail.com}{chrtonoyan@gmail.com}\\
+
+\textbf{Ms.\ Yerken Shantayev} (High School Computer Science advisor)\\
+Teacher of Computer Science at Nazarbayev Intellectual School \\of Physics and Mathematics in Astana, Kazakhstan\\
+\href{mailto:yshantayev@gmail.com}{yshantayev@gmail.com}\\
+
+%\newpage
+\end{document}
