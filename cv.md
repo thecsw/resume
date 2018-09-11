@@ -6,6 +6,18 @@
     [Website:]{.smallcaps} [people.ku.edu/\~s383u895](http://people.ku.edu/~s383u895)
   ------------------------ ------------------------------------------------------------
 
+Computer Skills
+===============
+
+  ------------------------- -----------------------------------------------------------------------------
+           Basic Knowledge: html, bash, Perl, golang (Go), Java, C++, Microsoft Access, vim
+                            
+    Intermediate Knowledge: C, Python, git (Version Control System), [Linux]{.smallcaps}, LaTeX, mySQL,
+                            Docker (Service Deployment, Containerization), ubuntu,
+                            Microsoft Word, Microsoft PowerPoint, Microsoft Excel,
+                            PostgreSQL, markdown, Org-Mode, emacs, Adobe Photoshop
+  ------------------------- -----------------------------------------------------------------------------
+
 Education
 =========
 
@@ -14,12 +26,7 @@ Education
                            
     [May]{.smallcaps} 2018 International Baccalaureate Diploma Programme at **Quantum College**, Yerevan
                    2 years Thesis --- "RSA:Encrypting, Decrypting, Hacking" \| Advisor: Smbat Shahinyan
-                           [Final IB Score]{.smallcaps}: 37/45 [\| Detailed List of Exams](#ib_grades)
-                           
-    [May]{.smallcaps} 2016 High school at **Nazarbayev Intellectual School** with Physics and
-                   4 years Mathematics concentration, Astana.
-                           Cambridge methodology on critical thinking introduced in all aspects
-                           of academic program.
+                           [Final IB Score]{.smallcaps}: 37/45
                            
                            
   ------------------------ --------------------------------------------------------------------------------------------------
@@ -70,23 +77,18 @@ Languages
      [French:]{.smallcaps} Basic Knowledge (A2)
   ------------------------ ----------------------
 
-Computer Skills
-===============
-
-  ------------------------- -----------------------------------------------------------------------------
-           Basic Knowledge: html, bash, Perl, golang (Go), Java, C++, Microsoft Access
-                            
-    Intermediate Knowledge: C, Python, git (Version Control System), [Linux]{.smallcaps}, LaTeX, mySQL,
-                            Docker (Service Deployment, Containerization), ubuntu,
-                            Microsoft Word, Microsoft PowerPoint, Microsoft Excel,
-                            PostgreSQL, markdown, Org-Mode, emacs, Adobe Photoshop
-  ------------------------- -----------------------------------------------------------------------------
-
 Interests and Activities
 ========================
 
 Open-Source, Data Science, Science Fiction, System Automation\
-Travelling, Learning new languages
+Travelling, Learning new programming languages
+
+Additional facts
+================
+
+Supervised and controlled several projects' development workflow\
+Favorite text editor is emacs and favorite Linux distribution is Arch
+Linux
 
 Professional References
 =======================
@@ -94,54 +96,20 @@ Professional References
 **Mohamed El-Hodiri** (Mentor, Honors Advisor)\
 Professor of Economics, CREEES, Middle-Eastern Studies, and AAAS\
 University of Kansas, Lawrence, Kansas\
-<melhodiri@ku.edu>\
+<melhodiri@ku.edu>
+
 **Mr. Arsen Darbasyan** (Professor for IB CS courses, project
 supervisor)\
 Professor of Computer Science and Head of Computer Science Department\
 Quantum College, Yerevan, Armenia\
-<arsentd@yahoo.com>\
+<arsentd@yahoo.com>
+
 **Ms. Kristine Tonoyan** (Professor for IB English courses)\
 English Specialist at International Baccalaureate Organization\
 Quantum College, Yerevan, Armenia\
-<chrtonoyan@gmail.com>\
+<chrtonoyan@gmail.com>
+
 **Ms. Yerken Shantayev** (High School Computer Science advisor)\
 Teacher of Computer Science at Nazarbayev Intellectual School\
 of Physics and Mathematics in Astana, Kazakhstan\
-<yshantayev@gmail.com>\
-
-[International Baccalaureate at [Quantum College]{.smallcaps},
-Yerevan]{#ib_grades}
-
-\large{\centering Grades (Out of 7) \par}
-\normalsize
-+-----------------------+-----------------------+-----------------------+
-|                       | [Level\*]{.smallcaps} | [Grade]{.smallcaps}   |
-+:======================+:=====================:+:=====================:+
-| English Language and  | HL                    | 5                     |
-| Literature            |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Mathematics           | HL                    | 6                     |
-+-----------------------+-----------------------+-----------------------+
-| Physics               | HL                    | 5                     |
-+-----------------------+-----------------------+-----------------------+
-| Computer Science      | SL                    | 7                     |
-+-----------------------+-----------------------+-----------------------+
-| Information           | SL                    | 7                     |
-| Technology in a       |                       |                       |
-| Global Society (ITGS) |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| French ab Initio      | SL                    | 5                     |
-+-----------------------+-----------------------+-----------------------+
-| Theory of Knowledge   | N/A                   | C                     |
-+-----------------------+-----------------------+-----------------------+
-| Extended Essay        | N/A                   | A                     |
-| (Mathematics)         |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-|                       |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| \cline{2-3}           | [Total]{.smallcaps}   | **37/45**             |
-+-----------------------+-----------------------+-----------------------+
-
-\
-
-\footnotesize{*HL --- High Level, SL --- Standard Level}
+<yshantayev@gmail.com>
