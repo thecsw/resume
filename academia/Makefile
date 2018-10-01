@@ -1,10 +1,11 @@
 COMPILER = xelatex
 NAME = cv
-GARBAGE = $(NAME).aux $(NAME).log $(NAME).out
+GARBAGE = $(OUTPUT_NAME).aux $(OUTPUT_NAME).log $(OUTPUT_NAME).out
 TEXFLAGS = -shell-escape
+OUTPUT_NAME = Sagindyk_CV
 
 $(NAME):
-	$(COMPILER) $(TEXFLAGS) $(NAME).tex
+	$(COMPILER) $(TEXFLAGS) -jobname=$(OUTPUT_NAME) $(NAME).tex
 	$(COMPILER) $(TEXFLAGS) $(NAME).tex
 clean:
 	rm $(GARBAGE)
