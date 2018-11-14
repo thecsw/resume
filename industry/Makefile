@@ -6,6 +6,6 @@ OUTPUT_NAME = Sagindyk_resume
 
 $(NAME):
 	$(COMPILER) $(TEXFLAGS) -jobname=$(OUTPUT_NAME) $(NAME).tex
-	$(COMPILER) $(TEXFLAGS) $(NAME).tex
+	$(COMPILER) $(TEXFLAGS) -jobname=$(OUTPUT_NAME) $(NAME).tex
 clean:
 	rm $(GARBAGE)
