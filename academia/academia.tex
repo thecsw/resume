@@ -21,9 +21,9 @@
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
+	SmallCapsFont = Fontin-SmallCaps.otf,
+	BoldFont = Fontin-Bold.otf,
+	ItalicFont = Fontin-Italic.otf
 ]
 {Fontin.otf}
 %%%
@@ -53,117 +53,142 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Sagindyk \textsc{Urazayev}
+	{\Huge Sagindyk \textsc{Urazayev}
 	}\bigskip\par}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
 %\section{}
-      \begin{center}
-        \begin{tabular}{lcl}
-          % \textsc{Place and Date of Birth:} & Almaty, Kazakhstan  | 14 June 2000 \\
-          \textsc{Address:}   1515 Engel Road TEM 502 &&
-                                                         \textsc{Phone:}      (785) 917--8451\\
-          \textsc{email:}      \href{mailto:sagindyk.urazayev@ku.edu}{sagindyk.urazayev@ku.edu}&&
-                                                                                                  \textsc{Github:} \href{https://github.com/thecsw}{@thecsw}\\
-          \textsc{Website:} \href{http://people.ku.edu/~s383u895}{people.ku.edu/\textasciitilde{}s383u895} && \textsc{LinkedIn:} \href{https://linkedin.com/in/thecsw}{thecsw}\\
-        \end{tabular}
-      \end{center}
-      
+
+\begin{center}
+	\begin{tabular}{lcl}
+		\textsc{Address:}   1515 Engel Road                                 &
+		\textsc{Phone:} \quad \ 785.917.8451                                &
+		\textsc{Email:} \quad \href{mailto:ctu@ku.edu}{ctu@ku.edu}            \\
+
+		\textsc{Website:} \href{https://thecsw.github.io}{thecsw.github.io} &
+		\textsc{Github:} \quad \href{https://github.com/thecsw}{@thecsw}    &
+		\textsc{LinkedIn:} \ \href{https://linkedin.com/in/thecsw}{thecsw}    \\
+	\end{tabular}
+\end{center}
+
 \section{Professional Skills}
 \begin{tabular}{rl}
 
-  \textbf{Computer Skills}:& C, Python, emacs, git (Version Control System), \textsc{Linux}, \LaTeX, \\& mySQL,
-  Docker (Service Deployment, Containerization),\\& Microsoft Word, Microsoft PowerPoint, Microsoft Excel,\\&
-  PostgreSQL, markdown, Org-Mode, Adobe Photoshop, \\& html, bash, Perl, golang (Go), Java, C++, Microsoft Access, vim\\\\
+	\textbf{Computer Skills}: & Go, Python, C, C++, emacs, git (Version Control System), \textsc{Linux}, \LaTeX, \\& mySQL,
+	PostgreSQL, Docker (Service Deployment, Containerization),                                                   \\&
+	JavaScript, AngularJS, markdown, Adobe Photoshop, bash, sh, Java                                             \\\\
 
-  \textbf{Languages}: &Russian, English, Kazakh, French\\
-  
+	\textbf{Languages}:       & English \emph{(bilingual proficiency)}, Russian \emph{(bilingual proficiency)}   \\
 \end{tabular}
 
-%Section: Education
-\section{Education}
-\begin{tabular}{rl}
-
-  \textsc{Current} & Undergraduate Degree in \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, Lawrence, KS\\
-  \\
-  
-  \textsc{May} 2018& International Baccalaureate Diploma Programme at \textbf{Quantum College}, Yerevan\\
-  2 years&Thesis --- ``RSA:\@ Encrypting, Decrypting, Hacking'' | Advisor: Smbat Shahinyan\\
-                   &\textsc{Final IB Score}: 37/45 \\&\\
-  
-\end{tabular}
-
-\section{Project Management Experience}
+\section{Professional Experience}
 \begin{tabular}{r|p{11cm}}
-  \textsc{Summer 2018 --- now} &  \textsc{Project Leader and Core Developer}, \emph{\href{https://github.com/MemeInvestor/memeinvestor_bot}{Meme Investor bot}} reddit bot\\&\footnotesize{
-  --- Collaborated with a group of developers (back-end and front-end) on new features (website, Docker environment, bash scripts for automation) and codebase improvements
 
-  --- Investigated and solved pending issues with the project's functionality on project's github page by branching the code and pushing new patches
+	\textsc{May 2020 --- now}      & \textsc{Software Engineering Intern}, \emph{RiskIQ Inc.}                                                                \\&\footnotesize{
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
 
-  --- Reviewed incoming pull requests, later approving or rejecting proposed code
+	\textsc{Nov 2019 --- now}      & \textsc{Co-founder}, \emph{Stellom LLC}                                                                                 \\&\footnotesize{
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
 
-  --- Maintained a production database with over 65,000 registered users
+	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO (Pollen, Inc.)}, Kansas-City, KS                                                     \\&\footnotesize{
+		--- Secured the internal systems by formulating and creating a new Role-Based Access Control mechanism
 
-  --- Programmed test cases to check the stress load of the project's codebase.
-  } \\\multicolumn{2}{c}{}\\
+		--- Programmed and tested a fully RFC 7230 compliant RESTful API backend in Go
+
+		--- Designed and developed optimized database models with complex table relationships
+
+		--- Troubleshooted and resolved unexpected failures of deployment management systems
+
+		--- Improved the internal deployment mechanism by implementing new templates
+
+		--- Saved company time on weekly deployments by automating the internal notifications and downtime management systems
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+
+	\textsc{May 2018 --- now}      & \textsc{Project Leader and Core Developer}, \emph{\href{https://github.com/thecsw/memeinvestor_bot}{Meme Investor Bot}} \\&\footnotesize{
+		--- Collaborating with a group of developers on new features and constant codebase improvements
+
+		--- Investigating and solving pending issues with the service's functionality
+
+		--- Reviewing incoming pull requests by approving or rejecting proposed code changes.
+
+		--- Maintaining a production database with over 100,000 registered users
+
+		--- Programming test cases to check the stress load of the project's codebase.
+
+		--- Writing a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+
+	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{University of Kansas, Honors}                                          \\&\footnotesize{
+		--- Grading students' papers on their research topics and degree interests
+
+		--- Aiding students and the professor with providing answers to inquiries inside and outside of the classroom
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+
+
+	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{University of Kansas, Economics}                                       \\&\footnotesize{
+		--- Typing academic papers in \LaTeX{} with journal formatting requirements
+
+		--- Proofreading scientific papers and evaluate the correctness of the equations
+	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
 \end{tabular}
-
-
 
 \section{Leadership Experience}
 \begin{tabular}{r|p{11cm}}
 
-  \textsc{Spring 2018} &  \textsc{Orientation leader for pre-IB students}, \emph{Quantum College}\\&\footnotesize{
-  --- Helped students with their books requirements, grading scale and IB standards
+	\textsc{Sep 2020 --- Now} & \textsc{Co-Founder \& Vice President}, \emph{KU Emacs Club} \\&\footnotesize{
+		--- Hosting bi-weekly tech guest speakers
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
 
-  --- Introduced students to faculty staff and academic honesty rules
-  } \\\multicolumn{2}{c}{}\\
+	\textsc{Feb 2019 --- Mar 2020} & \textsc{Honors Seminar Assistant}, \emph{University of Kansas}                                                     \\&\footnotesize{
+		--- Assisting with class preparations
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
 
-  \textsc{Nov 2016 --- Apr 2018} &  \textsc{Head of BookCrossing Club}, \emph{Quantum College}\\&\footnotesize{
-  --- Tracked and maintained a database (SQLite) of all available books
+	\textsc{Aug 2019 --- May 2020} & \textsc{Mentor at School of Engineering, ACM}, \emph{University of Kansas}                                         \\&\footnotesize{
+		--- Helping students navigate the world of the School of Engineering
 
-  --- Founded the club to encourage students read and share interesting books of all genres
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
 
-  --- Initiated group discussions about books that have been read
-  } \\\multicolumn{2}{c}{}\\
+	\textsc{Feb 2019 --- Mar 2020} & \textsc{CTO at KU Information Security Club}, \emph{University of Kansas}                                          \\&\footnotesize{
+		--- Organizing penetration testing and white-hat hacking labs for club members
 
-  \textsc{Oct 2016 --- Apr 2018} &  \textsc{Tutor in Photoshop Club}, \emph{Quantum College}\\&\footnotesize{
-  --- Trained enrolled students in the use of Adobe Photoshop
 
-  --- Taught basic image manipulation algorithms
+		--- Preparing and coaching teams for future state and national cyber-security competitions
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
 
-  --- Guided on job and freelance opportunities
+	\textsc{Spring 2018}           & \textsc{Orientation leader for pre-IB students}, \emph{Quantum College}                                            \\&\footnotesize{
+		--- Helped students with their books requirements, grading scale and IB standards
 
-  --- Designed several advertising and marketing materials for Quantum College (Event flairs, posters, CD covers)
-  } \\%\multicolumn{2}{c}{}\\
-  
+		--- Introduced students to faculty staff and academic honesty rules
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+
+	\textsc{Nov 2016 --- Apr 2018} & \textsc{Head of BookCrossing Club}, \emph{Quantum College}                                                         \\&\footnotesize{
+		--- Tracked and maintained a database (SQLite) of all available books
+
+		--- Founded the club to encourage students read and share interesting books of all genres
+
+		--- Initiated group discussions about books that have been read
+	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+
+	\textsc{Oct 2016 --- Apr 2018} & \textsc{Tutor in Photoshop Club}, \emph{Quantum College}                                                           \\&\footnotesize{
+		--- Trained enrolled students in the use of Adobe Photoshop
+
+		--- Taught basic image manipulation algorithms
+
+		--- Guided on job and freelance opportunities
+
+		--- Designed several advertising and marketing materials for Quantum College (Event flairs, posters, CD covers)
+	}                                                                                                                                                   \\%\multicolumn{2}{c}{}\\
 \end{tabular}
 
 
 %Section: Scholarships and additional info
 \section{Honors and Awards}
 \begin{tabular}{rl}
-  
-  \textsc{Aug.} 2018 & Honors Scholar at University of Kansas\\\\
-
-  \textsc{Aug.} 2018 & KU International Excellence Award \footnotesize{(Full tuition waiver)}\\\\
-
-  \textsc{July} 2018 & International Baccalaureate (IB) Diploma \footnotesize(Final Score 37/45)\\\\
-
-  \textsc{May} 2017 & Winner of the II and III place in high school Computer Science \\&competition “Surprise me”, Nazarbayev Intellectual School\\\\
-
-  \textsc{Sept.} 2012 & Scholarship from the Ministry of Education and Science of Kazakhstan\\&to study at Nazarbayev Intellectual School \footnotesize(Full tuition and food waiver)\normalsize\\\\
-
+	\textsc{Aug.} 2018 & Honors Scholar at University of Kansas                                    \\\\
+	\textsc{Aug.} 2018 & KU International Excellence Award \footnotesize{(Full tuition waiver)}    \\\\
+	\textsc{July} 2018 & International Baccalaureate (IB) Diploma \footnotesize(Final Score 37/45) \\\\
 \end{tabular}
-
-\section{Interests and Activities}
-Open-Source, Data Science, Science Fiction, System Automation\\
-Travelling, Learning new programming languages
-
-\section{Additional facts}
-Supervised and controlled several projects' development workflow\\
-Favorite text editor is emacs and favorite Linux distribution is Arch Linux
 
 \section{Professional References}
 
@@ -172,36 +197,14 @@ Professor of Economics, CREEES, Middle-Eastern Studies, and AAAS\\
 University of Kansas, Lawrence, Kansas\\
 \href{mailto:melhodiri@ku.edu}{melhodiri@ku.edu}
 
-\textbf{Mr.\ Arsen Darbasyan} (Professor for IB CS courses, project supervisor)\\
-Professor of Computer Science and Head of Computer Science Department\\
-Quantum College, Yerevan, Armenia\\
-\href{mailto:arsentd@yahoo.com}{arsentd@yahoo.com}
+\textbf{Erik Van Vleck} (Honors Advisor)\\
+Professor of Mathematics\\
+University of Kansas, Lawrence, Kansas\\
+\href{mailto:erikvv@ku.edu}{erikvv@ku.edu}
 
-\textbf{Ms.\ Kristine Tonoyan} (Professor for IB English courses)\\
-English Specialist at International Baccalaureate Organization\\
-Quantum College, Yerevan, Armenia\\
-\href{mailto:chrtonoyan@gmail.com}{chrtonoyan@gmail.com}
+\textbf{Thomas D. Carroll} (Internship supervisor)\\
+Devops Team Lead\\
+C2FO\\
+\href{mailto:thomas.carroll@c2fo.com}{thomas.carroll@c2fo.com}
 
- %-- Education grades
- \newpage
- \par{\centering\Large \hypertarget{ib_grades}{International Baccalaureate at \textsc{Quantum College}, Yerevan}\par}\large{\centering Grades (Out of 7) \par}\normalsize
-
- \begin{center}
- \begin{tabular}{lcc}
- \multicolumn{1}{c}{\textsc{Exam}}&\textsc{Level*}&\textsc{Grade}\\ \hline
-   English Language and Literature	&HL&	5\\
-   Mathematics	&HL&	6\\
-   Physics	&HL&	5\\
-   Computer Science & SL& 7\\
-   Information Technology in a Global Society (ITGS) & SL& 7\\
-   French ab Initio & SL & 5\\
-   Theory of Knowledge & N/A & C\\
-   Extended Essay (Mathematics) & N/A & A\\
- & &\\\cline{2-3}
-  &\textsc{Total}&\textbf{37/45}
- \end{tabular}\\
- \begin{flushleft}
- \footnotesize{*HL --- High Level, SL --- Standard Level}
- \end{flushleft}
- \end{center}
 \end{document}
