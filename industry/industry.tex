@@ -1,4 +1,4 @@
-\documentclass[letterpaper, 10pt]{article}
+\documentclass[a4paper, 10pt]{article}
 
 \usepackage{marvosym}
 \usepackage{fontspec}
@@ -33,6 +33,7 @@
 
 \begin{document}
 \pagestyle{empty}
+\enlargethispage{\baselineskip}
 
 \par{\centering
 	{\Huge Sagindyk (Sandy) \textsc{Urazayev}
@@ -53,53 +54,30 @@
 \section{Education}
 \begin{tabular}{rl}
 	\textsc{Current} & Bachelor of Arts --- \textsc{Mathematics} at \normalsize\textbf{University of Kansas}, May 2022         \\
-	%, 4.0 GPA         \\
 	                 & Bachelor of Science --- \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, May 2022 \\
-	%      , 4.0 GPA \\
+	                 & Bachelor of Arts --- \textsc{Slavic Languages and Literatures (Russian)} at \normalsize\textbf{University of Kansas}, May 2022         \\
+
 	\\
 \end{tabular}
 
 \section{Professional Experience}
 \begin{tabular}{r|p{12cm}}
+	
+	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO}                         \\&\footnotesize{
+		--- Secured the internal systems by implementing a new Role-Based Access Control mechanism
 
-	\textsc{Aug 2020 --- now}      & \textsc{Supplemental Instructor}, \emph{KU, Electrical Engineering and Computer Science}    \\&\footnotesize{
-		--- Holding office hours to assist students with their classes and answering their questions
+		--- Programmed and tested a fully RFC 7230 compliant RESTful API backend in Go
 
-		--- Organizing and overseeing social events for engineering students and help them to network}                               \\\multicolumn{2}{c}{}\\
+		--- Designed and developed optimized database models with rich table relationships
 
-	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{University of Kansas, Honors}              \\ \textsc{Aug 2020 --- now} &\footnotesize{
-		--- Grading students' scientific papers on their research topics of interest
+		--- Troubleshooted and resolved unexpected failures of deployment management systems
 
-		--- Aiding students with providing answers to inquiries inside and outside of the classroom
+		--- Improved the deployment management service dashboard using AngularJS
+
+		--- Saved company time on weekly deployments by automating the internal notifications and downtime management systems
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
-	\textsc{Nov 2019 --- now}      & \textsc{Co-founder and Consultant}, \emph{Stellom Inc.}                                     \\&\footnotesize{
-		--- Assisting with merging codebases of existing platforms and accelerating profitability of services
-
-		--- Consulting the engineering team on effective methods to improve infrastructure reliability
-	}                                                                                                                            \\\multicolumn{2}{c}{}\\
-
-	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{University of Kansas, Economics}           \\&\footnotesize{
-		--- Typing academic papers in \LaTeX{} with journal formatting requirements
-
-		--- Proofreading scientific papers and evaluate the correctness of the equations
-	}                                                                                                                            \\\multicolumn{2}{c}{}\\
-
-	\textsc{May 2018 --- Oct 2020} & \textsc{Project Leader and Core Developer}, \emph{\href{https://meme.market}{Meme Economy}} \\&\footnotesize{
-		--- Collaborated with a group of developers on new features and codebase improvements
-
-		--- Investigated and solving pending issues with the service's functionality
-
-		--- Reviewed incoming pull requests by approving or rejecting proposed code changes.
-
-		--- Maintained a production database with over 100,000 registered users
-
-		--- Programmed test cases to check the stress load of the project's codebase.
-
-		--- Wrote a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
-	}                                                                                                                            \\\multicolumn{2}{c}{}\\
-
-	\textsc{May 2020 --- Aug 2020} & \textsc{Software Engineering Intern}, \emph{RiskIQ Inc.}, Lenexa, KS                        \\&\footnotesize{
+	\textsc{May 2020 --- Aug 2020} & \textsc{Software Engineering Intern}, \emph{RiskIQ}                      \\&\footnotesize{
 		--- Expedited network data refreshes and collection by updating Linux shell routines
 
 		--- Detected and refined existing services' compliancy with current data protection regulations
@@ -114,20 +92,46 @@
 
 		--- Upgraded the company's critical data source by engineering a new reliable service in Java
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+	
+	\textsc{May 2018 --- Oct 2020} & \textsc{Project Leader and Core Developer}, \emph{\href{https://meme.market}{Meme Economy}} \\&\footnotesize{
+		--- Collaborated with a group of developers on new features and codebase improvements
 
-	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO (Pollen, Inc.)}, Kansas-City, KS                         \\&\footnotesize{
-		--- Secured the internal systems by implementing a new Role-Based Access Control mechanism
+		--- Investigated and solved pending issues with the service's functionality
 
-		--- Programmed and tested a fully RFC 7230 compliant RESTful API backend in Go
+		--- Reviewed incoming pull requests by approving or rejecting proposed code changes.
 
-		--- Designed and developed optimized database models with rich table relationships
+		--- Maintained a production database with over 100,000 registered users
 
-		--- Troubleshooted and resolved unexpected failures of deployment management systems
+		--- Programmed test cases to check the stress load of the project's codebase.
 
-		--- Improved the deployment management service dashboard using AngularJS
-
-		--- Saved company time on weekly deployments by automating the internal notifications and downtime management systems
+		--- Wrote a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+	
+	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{University of Kansas (Economics)}           \\&\footnotesize{
+		--- Typing academic papers in \LaTeX{} with journal formatting requirements
+
+		--- Proofreading scientific papers and evaluate the correctness of the equations
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+	
+	\textsc{Nov 2019 --- now}      & \textsc{Co-founder and Consultant}, \emph{Stellom Inc.}                                     \\&\footnotesize{
+		--- Merging codebases of existing platforms and accelerating profitability of services
+
+		--- Consulting the engineering team on effective methods to improve infrastructure reliability
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+	
+	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{University of Kansas (Honors)}              \\ \textsc{Aug 2020 --- now} &\footnotesize{
+		--- Grading students' scientific papers on their research topics of interest
+
+		--- Providing students with answers to inquiries inside and outside of the classroom
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+	
+
+	\textsc{Aug 2020 --- now}      & \textsc{Supplemental Instructor}, \emph{University of Kansas (Computer Science)}    \\&\footnotesize{
+		--- Holding office hours to assist students with their classes and answering their questions
+
+		--- Organizing and overseeing social events for engineering students and help them to network
+	}                               \\\multicolumn{2}{c}{}\\
+
 \end{tabular}
 
 \section{Professional Skills}
