@@ -1,9 +1,7 @@
 \documentclass[a4paper, 10pt]{article}
 
-\usepackage{marvosym}
-\usepackage{fontspec}
 \usepackage{xunicode,xltxtra,url,parskip}
-\RequirePackage{color,graphicx}
+\usepackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{fullpage}
 \usepackage{supertabular}
@@ -11,22 +9,20 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{geometry}
+
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+
 \geometry{
-	letterpaper,
+	a4paper,
 	total={170mm,257mm},
-	left=20mm,
+	left=15mm,
+	right=15mm,
 	top=10mm,
 }
+
 \definecolor{linkcolour}{rgb}{0,0.1,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
-
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[
-	SmallCapsFont = Fontin-SmallCaps.otf,
-	BoldFont = Fontin-Bold.otf,
-	ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{1pt}{1pt}
@@ -41,7 +37,7 @@
 
 \begin{center}
 	\begin{tabular}{lcl}
-		\textsc{Address:}   1603 W 15th St.                              &
+		\textsc{Address:}   Lawrence, KS                                 &
 		\textsc{Phone:} \quad \ 785.917.8451                             &
 		\textsc{Email:} \quad \href{mailto:ctu@ku.edu}{ctu@ku.edu}         \\
 
@@ -53,9 +49,9 @@
 
 \section{Education}
 \begin{tabular}{rl}
-	\textsc{Current} & Bachelor of Arts --- \textsc{Mathematics} at \normalsize\textbf{University of Kansas}, May 2022                                \\
-	                 & Bachelor of Science --- \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, May 2022                        \\
-	                 & Bachelor of Arts --- \textsc{Slavic Languages and Literatures (Russian)} at \normalsize\textbf{University of Kansas}, May 2022 \\
+	\textsc{Current} & Bachelor of Arts --- \textsc{Mathematics} at \normalsize\textbf{University of Kansas}, May 2022         \\
+	                 & Bachelor of Science --- \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, May 2022 \\
+	                 & Bachelor of Arts --- \textsc{Russian} at \normalsize\textbf{University of Kansas}, May 2022    \\
 
 	\\
 \end{tabular}
@@ -64,7 +60,7 @@
 \begin{tabular}{r|p{12cm}}
 
 	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO}                                                         \\&\footnotesize{
-		--- Secured the internal systems by implementing a new Role-Based Access Control mechanism
+		--- Secured the internal systems with new Role-Based Access Control policies
 
 		--- Programmed and tested a fully RFC 7230 compliant RESTful API backend in Go
 
@@ -80,7 +76,7 @@
 	\textsc{May 2020 --- Aug 2020} & \textsc{Software Engineering Intern}, \emph{RiskIQ}                                         \\&\footnotesize{
 		--- Expedited network data refreshes and collection by updating Linux shell routines
 
-		--- Detected and refined existing services' compliancy with current data protection regulations
+		--- Detected and refined existing services' compliancy with data protection regulations
 
 		--- Coded and tested a fully RFC 7230 compliant RESTful API backend in Java
 
@@ -88,9 +84,9 @@
 
 		--- Built complex class relationships to achieve maximum performance and maintainability
 
-		--- Rewrote the third-party integration platform to connect to more business partners' services
+		--- Rewrote the third-party integration platform to support 3rd-party integrations
 
-		--- Upgraded the company's critical data source by engineering a new reliable service in Java
+		--- Upgraded the critical ASN data source by bulding a new ASN extraction service
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
 	\textsc{May 2018 --- Oct 2020} & \textsc{Project Leader and Core Developer}, \emph{\href{https://meme.market}{Meme Economy}} \\&\footnotesize{
@@ -107,7 +103,7 @@
 		--- Wrote a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
-	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{University of Kansas (Economics)}          \\&\footnotesize{
+	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{KU Economics}                              \\&\footnotesize{
 		--- Typing academic papers in \LaTeX{} with journal formatting requirements
 
 		--- Proofreading scientific papers and evaluate the correctness of the equations
@@ -116,20 +112,30 @@
 	\textsc{Nov 2019 --- now}      & \textsc{Co-founder and Consultant}, \emph{Stellom Inc.}                                     \\&\footnotesize{
 		--- Merging codebases of existing platforms and accelerating profitability of services
 
-		--- Consulting the engineering team on effective methods to improve infrastructure reliability
+		--- Consulting the engineering team on effective methods to improve the infrastructure
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
-	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{University of Kansas (Honors)}             \\ \textsc{Aug 2020 --- Dec 2020} &\footnotesize{
+	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{KU Honors}                                 \\ \textsc{Aug 2020 --- Dec 2020} &\footnotesize{
 		--- Grading students' scientific papers on their research topics of interest
 
 		--- Providing students with answers to inquiries inside and outside of the classroom
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
 
-	\textsc{Aug 2020 --- Dec 2020} & \textsc{Supplemental Instructor}, \emph{University of Kansas (Computer Science)}            \\&\footnotesize{
+	\textsc{Aug 2020 --- Dec 2020} & \textsc{Supplemental Instructor}, \emph{KU Computer Science}                                \\&\footnotesize{
 		--- Holding office hours to assist students with their classes and answering their questions
 
-		--- Organizing and overseeing social events for engineering students and help them to network
+		--- Organizing and overseeing social networking events for new engineering students
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Jan 2021 --- May 2021} & \textsc{Tutor}, \emph{KU School of Engineering}                                             \\&\footnotesize{
+		--- Hosting weekly study sessions multiple times a week over engineering courses
+
+		--- Proctor engineering practice midterm exams and holding midterm review sessions
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Jan 2021 --- May 2021} & \textsc{Grader}, \emph{KU Mathematics}                                                      \\&\footnotesize{
+		--- Typing and publishing weekly homework solutions in \LaTeX with student's grades
 	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 \end{tabular}
 
@@ -140,7 +146,7 @@
 	\textbf{Proficient}: C++, PostgreSQL, Docker (Containerization), JavaScript                                \\&
 	\textbf{Novice}: AWS, mySQL, Ruby, Elixir, Rust, AngularJS, React                                          \\\\
 
-	\textbf{Languages}:       & English \emph{(bilingual proficiency)}, Russian \emph{(bilingual proficiency)} \\
+	\textbf{Languages}:       & English \emph{(bilingual proficiency)}, Russian \emph{(bilingual proficiency)} \\\\
 \end{tabular}
 
 \section{Volunteer Experience}

@@ -1,176 +1,208 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper, 10pt]{article}
 
-%A Few Useful Packages
-\usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-\RequirePackage{color,graphicx}
+\usepackage{xunicode,xltxtra,url,parskip}
+\usepackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
-
-%Setup hyperref package, and colours for links
+\usepackage{fullpage}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{setspace}
 \usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\usepackage{geometry}
+
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+
+\geometry{
+	a4paper,
+	left=20mm,
+	top=10mm,
+}
+
+\definecolor{linkcolour}{rgb}{0,0.1,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%FONTS
-\defaultfontfeatures{Mapping=tex-text}
-%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-%%% modified for Karol Kozioł for ShareLaTeX use
-\setmainfont[
-	SmallCapsFont = Fontin-SmallCaps.otf,
-	BoldFont = Fontin-Bold.otf,
-	ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
-%%%
-
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
+\titlespacing{\section}{0pt}{1pt}{1pt}
 
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
-
-%-------------WATERMARK TEST [**not part of a CV**]---------------
-\usepackage[absolute]{textpos}
-
-\setlength{\TPHorizModule}{30mm}
-\setlength{\TPVertModule}{\TPHorizModule}
-\textblockorigin{2mm}{0.65\paperheight}
-\setlength{\parindent}{0pt}
-
-%--------------------BEGIN DOCUMENT----------------------
 \begin{document}
+\pagestyle{empty}
+\enlargethispage{\baselineskip}
 
-\pagestyle{empty} % non-numbered pages
-
-%--------------------TITLE-------------
 \par{\centering
-	{\Huge Sagindyk \textsc{Urazayev}
-	}\bigskip\par}
-
-%--------------------SECTIONS-----------------------------------
-%Section: Personal Data
-%\section{}
+	{\Huge Sagindyk (Sandy) \textsc{Urazayev}
+	}\smallskip\par}
 
 \begin{center}
 	\begin{tabular}{lcl}
-		\textsc{Address:}   1515 Engel Road                                 &
-		\textsc{Phone:} \quad \ 785.917.8451                                &
-		\textsc{Email:} \quad \href{mailto:ctu@ku.edu}{ctu@ku.edu}            \\
+		\textsc{Address:}   Lawrence, KS                                 &
+		\textsc{Phone:} \quad \ 785.917.8451                             &
+		\textsc{Email:} \quad \href{mailto:ctu@ku.edu}{ctu@ku.edu}         \\
 
-		\textsc{Website:} \href{https://thecsw.github.io}{thecsw.github.io} &
-		\textsc{Github:} \quad \href{https://github.com/thecsw}{@thecsw}    &
-		\textsc{LinkedIn:} \ \href{https://linkedin.com/in/thecsw}{thecsw}    \\
+		\textsc{Website:} \href{https://sandyuraz.com}{sandyuraz.com}    &
+		\textsc{Github:} \quad \href{https://github.com/thecsw}{@thecsw} &
+		\textsc{LinkedIn:} \ \href{https://linkedin.com/in/thecsw}{thecsw} \\
 	\end{tabular}
 \end{center}
 
-\section{Professional Skills}
+\section{Education}
+
 \begin{tabular}{rl}
+	\textsc{Current} & Bachelor of Arts --- \textsc{Mathematics} at \normalsize\textbf{University of Kansas}, May 2022         \\
+	                 & Bachelor of Science --- \textsc{Computer Science} at \normalsize\textbf{University of Kansas}, May 2022 \\
+	                 & Bachelor of Arts --- \textsc{Russian} at \normalsize\textbf{University of Kansas}, May 2022             \\
 
-	\textbf{Computer Skills}: & Go, Python, C, C++, emacs, git (Version Control System), \textsc{Linux}, \LaTeX, \\& mySQL,
-	PostgreSQL, Docker (Service Deployment, Containerization),                                                   \\&
-	JavaScript, AngularJS, markdown, Adobe Photoshop, bash, sh, Java                                             \\\\
-
-	\textbf{Languages}:       & English \emph{(bilingual proficiency)}, Russian \emph{(bilingual proficiency)}   \\
+	\\
 \end{tabular}
 
 \section{Professional Experience}
-\begin{tabular}{r|p{11cm}}
 
-	\textsc{May 2020 --- now}      & \textsc{Software Engineering Intern}, \emph{RiskIQ Inc.}                                                                \\&\footnotesize{
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+\begin{tabular}{r|p{12cm}}
 
-	\textsc{Nov 2019 --- now}      & \textsc{Co-founder}, \emph{Stellom LLC}                                                                                 \\&\footnotesize{
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
-
-	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO (Pollen, Inc.)}, Kansas-City, KS                                                     \\&\footnotesize{
-		--- Secured the internal systems by formulating and creating a new Role-Based Access Control mechanism
+	\textsc{May 2019 --- Aug 2019} & \textsc{DevOps Intern}, \emph{C2FO}                                                         \\&\footnotesize{
+		--- Secured the internal systems with new Role-Based Access Control policies
 
 		--- Programmed and tested a fully RFC 7230 compliant RESTful API backend in Go
 
-		--- Designed and developed optimized database models with complex table relationships
+		--- Designed and developed optimized database models with rich table relationships
 
 		--- Troubleshooted and resolved unexpected failures of deployment management systems
 
-		--- Improved the internal deployment mechanism by implementing new templates
+		--- Improved the deployment management service dashboard using AngularJS
 
 		--- Saved company time on weekly deployments by automating the internal notifications and downtime management systems
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
-	\textsc{May 2018 --- now}      & \textsc{Project Leader and Core Developer}, \emph{\href{https://github.com/thecsw/memeinvestor_bot}{Meme Investor Bot}} \\&\footnotesize{
-		--- Collaborating with a group of developers on new features and constant codebase improvements
+	\textsc{May 2020 --- Aug 2020} & \textsc{Software Engineering Intern}, \emph{RiskIQ}                                         \\&\footnotesize{
+		--- Expedited network data refreshes and collection by updating Linux shell routines
 
-		--- Investigating and solving pending issues with the service's functionality
+		--- Detected and refined existing services' compliancy with data protection regulations
 
-		--- Reviewing incoming pull requests by approving or rejecting proposed code changes.
+		--- Coded and tested a fully RFC 7230 compliant RESTful API backend in Java
 
-		--- Maintaining a production database with over 100,000 registered users
+		--- Devised and deployed a massive third-party integration with Microsoft using Java/React
 
-		--- Programming test cases to check the stress load of the project's codebase.
+		--- Built complex class relationships to achieve maximum performance and maintainability
 
-		--- Writing a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+		--- Rewrote the third-party integration platform to support 3rd-party integrations
 
-	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{University of Kansas, Honors}                                          \\&\footnotesize{
-		--- Grading students' papers on their research topics and degree interests
+		--- Upgraded the critical ASN data source by bulding a new ASN extraction service
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
 
-		--- Aiding students and the professor with providing answers to inquiries inside and outside of the classroom
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+	\textsc{May 2018 --- Oct 2020} & \textsc{Project Leader and Core Developer}, \emph{\href{https://meme.market}{Meme Economy}} \\&\footnotesize{
+		--- Collaborated with a group of developers on new features and codebase improvements
 
+		--- Investigated and solved pending issues with the service's functionality
 
-	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{University of Kansas, Economics}                                       \\&\footnotesize{
+		--- Reviewed incoming pull requests by approving or rejecting proposed code changes.
+
+		--- Maintained a production database with over 100,000 registered users
+
+		--- Programmed test cases to check the stress load of the project's codebase.
+
+		--- Wrote a RESTful API to provide database request results for \href{https://meme.market}{meme.market}
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Nov 2018 --- Now}      & \textsc{Undergraduate Research Assistant}, \emph{KU Economics}                              \\&\footnotesize{
 		--- Typing academic papers in \LaTeX{} with journal formatting requirements
 
 		--- Proofreading scientific papers and evaluate the correctness of the equations
-	}                                                                                                                                                        \\\multicolumn{2}{c}{}\\
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Nov 2019 --- now}      & \textsc{Co-founder and Consultant}, \emph{Stellom Inc.}                                     \\&\footnotesize{
+		--- Merging codebases of existing platforms and accelerating profitability of services
+
+		--- Consulting the engineering team on effective methods to improve the infrastructure
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Aug 2019 --- Dec 2019} & \textsc{Undergraduate Teaching Assistant}, \emph{KU Honors}                                 \\ \textsc{Aug 2020 --- Dec 2020} &\footnotesize{
+		--- Grading students' scientific papers on their research topics of interest
+
+		--- Providing students with answers to inquiries inside and outside of the classroom
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+
+	\textsc{Aug 2020 --- Dec 2020} & \textsc{Supplemental Instructor}, \emph{KU Computer Science}                                \\&\footnotesize{
+		--- Holding office hours to assist students with their classes and answering their questions
+
+		--- Organizing and overseeing social networking events for new engineering students
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Jan 2021 --- May 2021} & \textsc{Tutor}, \emph{KU School of Engineering}                                             \\&\footnotesize{
+		--- Hosting weekly study sessions multiple times a week over engineering courses
+
+		--- Proctor engineering practice midterm exams and holding midterm review sessions
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+
+	\textsc{Jan 2021 --- May 2021} & \textsc{Grader}, \emph{KU Mathematics}                                                      \\&\footnotesize{
+		--- Typing and publishing weekly homework solutions in \LaTeX with student's grades
+	}                                                                                                                            \\\multicolumn{2}{c}{}\\
+\end{tabular}
+
+\section{Professional Skills}
+
+\begin{tabular}{rl}
+	\textbf{Computer Skills}: &
+	\textbf{Expert}: Go, Java, Python, C, \textsc{Linux}, \LaTeX, git, REST APIs                               \\&
+	\textbf{Proficient}: C++, PostgreSQL, Docker (Containerization), JavaScript                                \\&
+	\textbf{Novice}: AWS, mySQL, Ruby, Elixir, Rust, AngularJS, React                                          \\\\
+	\textbf{Languages}:       & English \emph{(bilingual proficiency)}, Russian \emph{(bilingual proficiency)} \\\\
+\end{tabular}
+
+\section{Volunteer Experience}
+
+\begin{tabular}{r|p{12cm}}
+
+	\textsc{Aug 2019 --- May 2020} & \textsc{Mentor at School of Engineering, ACM}, \emph{University of Kansas} \\&\footnotesize{
+		--- Helping freshmen with finding engineering resources and advising on academic performance
+	}                                                                                                           \\\multicolumn{2}{c}{}\\
 \end{tabular}
 
 \section{Leadership Experience}
+
 \begin{tabular}{r|p{11cm}}
 
-	\textsc{Sep 2020 --- Now} & \textsc{Co-Founder \& Vice President}, \emph{KU Emacs Club} \\&\footnotesize{
+	\textsc{Apr 2020 --- Apr 2020} & \textsc{Co-Chair}, \emph{KU Programming Club}                           \\&\footnotesize{
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
+
+	\textsc{Apr 2020 --- Apr 2020} & \textsc{Technical Director}, \emph{KU Business Club}                    \\&\footnotesize{
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
+
+	\textsc{Sep 2019 --- May 2020} & \textsc{Co-Founder \& Vice President}, \emph{KU Emacs Club}             \\&\footnotesize{
 		--- Hosting bi-weekly tech guest speakers
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Feb 2019 --- Mar 2020} & \textsc{Honors Seminar Assistant}, \emph{University of Kansas}                                                     \\&\footnotesize{
+	\textsc{Feb 2019 --- Mar 2020} & \textsc{Honors Seminar Assistant}, \emph{KU Honors}                     \\&\footnotesize{
 		--- Assisting with class preparations
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Aug 2019 --- May 2020} & \textsc{Mentor at School of Engineering, ACM}, \emph{University of Kansas}                                         \\&\footnotesize{
+	\textsc{Aug 2019 --- May 2020} & \textsc{Mentor of School of Engineering}, \emph{KU ACM}                 \\&\footnotesize{
 		--- Helping students navigate the world of the School of Engineering
 
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Feb 2019 --- Mar 2020} & \textsc{CTO at KU Information Security Club}, \emph{University of Kansas}                                          \\&\footnotesize{
+	\textsc{Feb 2019 --- Mar 2020} & \textsc{Chief Technical Officer}, \emph{KU Information Security Club}   \\&\footnotesize{
 		--- Organizing penetration testing and white-hat hacking labs for club members
 
 
 		--- Preparing and coaching teams for future state and national cyber-security competitions
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Spring 2018}           & \textsc{Orientation leader for pre-IB students}, \emph{Quantum College}                                            \\&\footnotesize{
+	\textsc{Spring 2018}           & \textsc{Orientation leader for pre-IB students}, \emph{Quantum College} \\&\footnotesize{
 		--- Helped students with their books requirements, grading scale and IB standards
 
 		--- Introduced students to faculty staff and academic honesty rules
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Nov 2016 --- Apr 2018} & \textsc{Head of BookCrossing Club}, \emph{Quantum College}                                                         \\&\footnotesize{
+	\textsc{Nov 2016 --- Apr 2018} & \textsc{Head of BookCrossing Club}, \emph{Quantum College}              \\&\footnotesize{
 		--- Tracked and maintained a database (SQLite) of all available books
 
 		--- Founded the club to encourage students read and share interesting books of all genres
 
 		--- Initiated group discussions about books that have been read
-	}                                                                                                                                                   \\\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 
-	\textsc{Oct 2016 --- Apr 2018} & \textsc{Tutor in Photoshop Club}, \emph{Quantum College}                                                           \\&\footnotesize{
+	\textsc{Oct 2016 --- Apr 2018} & \textsc{Tutor in Photoshop Club}, \emph{Quantum College}                \\&\footnotesize{
 		--- Trained enrolled students in the use of Adobe Photoshop
 
 		--- Taught basic image manipulation algorithms
@@ -178,16 +210,15 @@
 		--- Guided on job and freelance opportunities
 
 		--- Designed several advertising and marketing materials for Quantum College (Event flairs, posters, CD covers)
-	}                                                                                                                                                   \\%\multicolumn{2}{c}{}\\
+	}                                                                                                        \\\multicolumn{2}{c}{}\\
 \end{tabular}
 
-
-%Section: Scholarships and additional info
 \section{Honors and Awards}
+
 \begin{tabular}{rl}
-	\textsc{Aug.} 2018 & Honors Scholar at University of Kansas                                    \\\\
-	\textsc{Aug.} 2018 & KU International Excellence Award \footnotesize{(Full tuition waiver)}    \\\\
-	\textsc{July} 2018 & International Baccalaureate (IB) Diploma \footnotesize(Final Score 37/45) \\\\
+	\textsc{Aug.} 2018 & Honors Scholar at University of Kansas \\\\
+	\textsc{Aug.} 2018 & KU International Excellence Award      \\\\
+	\textsc{July} 2018 & International Baccalaureate  Diploma   \\\\
 \end{tabular}
 
 \section{Professional References}
